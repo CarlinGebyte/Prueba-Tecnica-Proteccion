@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Prueba-Tecnica-Proteccion/static/css/main.58692b96.css",
+    "main.js": "/Prueba-Tecnica-Proteccion/static/js/main.b795d2b6.js",
+    "index.html": "/Prueba-Tecnica-Proteccion/index.html",
+    "main.58692b96.css.map": "/Prueba-Tecnica-Proteccion/static/css/main.58692b96.css.map",
+    "main.b795d2b6.js.map": "/Prueba-Tecnica-Proteccion/static/js/main.b795d2b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58692b96.css",
+    "static/js/main.b795d2b6.js"
+  ]
+}
