@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import formatTime from "../Utils/Clock";
+import styles from "../Styles/Clock.module.scss"
 
 function Clock() {
   const initialState = {
@@ -22,8 +23,8 @@ function Clock() {
   }, []);
 
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className={styles.clock_container}>
         <h1>
           {state.hours} : {state.minutes} : {state.seconds}
         </h1>

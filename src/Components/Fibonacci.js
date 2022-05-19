@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FibonacciNumbers, GenerateFibonacci } from "../Utils/FibonacciFunc";
+import styles from "../Styles/Fibonacci.module.scss"
 
 function Fibonacci() {
   const initialState = [];
@@ -19,18 +20,19 @@ function Fibonacci() {
     console.log(fibonacci);
   }, [fibonacci]);
   return (
-    <div>
+    <div className={styles.fibonacci_container + " container"}>
       <div>
         <h1>Fibonacci</h1>
-        <p>Fibonacci para las semillas </p>
       </div>
-      <div>
+      <div className={styles.fibonacci_result}>
         {fibonacci.map((item, index) => {
-          return <p key={index}>{item}, </p>;
+          return <p key={index}>{item} </p>;
         })}
       </div>
       <div>
-        <button onClick={handleClick}>Generar</button>
+        <button className={styles.fibonacci_button} onClick={handleClick}>
+          Generar
+        </button>
       </div>
     </div>
   );
